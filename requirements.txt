@@ -1,4 +1,42 @@
+# ==============================
+# LLM & AI AGENT
+# ==============================
 langchain
-dotenv
+langchain-core
 langchain-google-genai
-streamlit
+langchain-community
+langgraph
+
+
+
+
+# ==============================
+# ENVIRONMENT VARIABLES
+# ==============================
+python-dotenv
+
+
+
+
+# ==============================
+# BACKEND - FASTAPI
+# ==============================
+fastapi
+uvicorn[standard]
+pydantic
+
+
+
+
+# ==============================
+# DATABASE
+# ==============================
+sqlalchemy
+
+
+
+
+# ==============================
+# HTTP REQUESTS
+# ==============================
+requests

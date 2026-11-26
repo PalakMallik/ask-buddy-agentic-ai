@@ -1,6 +1,35 @@
+# Environment variables and secrets
 .env
+.env.*
+
+# Virtual environments
 env/
-notebooks/
+.venv/
+venv/
+
+# Python cache
 __pycache__/
 *.pyc
+*.py[cod]
+*.pyo
+
+# Local database
+data/*.db
+data/*.sqlite
+data/*.sqlite3
+
+# Jupyter notebooks
+notebooks/
 .ipynb_checkpoints/
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
