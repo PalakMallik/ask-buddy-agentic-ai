@@ -643,10 +643,7 @@ menuButton.addEventListener("click", () => {
 
 
 if (closeSidebar) {
-    closeSidebar.addEventListener(
-        "click",
-        closeMobileSidebar
-    );
+    closeSidebar.addEventListener("click", closeMobileSidebar);
 }
 
 
