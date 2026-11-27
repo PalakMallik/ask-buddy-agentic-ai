@@ -36,11 +36,11 @@ The application features a modern web interface, conversational memory, streamin
 
 ### 3. AI Conversation
 
-![Ask Buddy AI Conversation](screenshots/image_3.jpeg)
+![Ask Buddy AI Conversation](screenshots/image_4.jpeg)
 
 ### 4. Chat History
 
-![Ask Buddy Chat History](screenshots/image_4.jpeg)
+![Ask Buddy Chat History](screenshots/image_3.jpeg)
 
 ## 🛠️ Tech Stack
 
