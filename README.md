@@ -2,11 +2,15 @@
 
 **Ask Buddy** is an Agentic AI-powered chatbot that combines Google's Gemini AI, LangGraph, and web search capabilities to deliver intelligent and context-aware conversations.
 
-Unlike a basic chatbot, Ask Buddy can use an AI agent workflow to determine when external tools are needed, retrieve relevant information through web search, and generate responses based on the available context.
+Unlike a traditional chatbot, Ask Buddy uses an AI agent workflow to determine when external tools are needed, retrieve relevant information through web search, and generate responses based on the available context.
 
-The application features a modern web interface, conversational memory, streaming responses, and a FastAPI backend.
+The application features a modern web interface, conversational memory, streaming responses, chat history management, and a FastAPI backend.
 
----
+## 🌐 Live Demo
+
+**Try Ask Buddy here:** [https://ask-buddy-agentic-ai.onrender.com](https://ask-buddy-agentic-ai.onrender.com)
+
+> Note: The application is hosted on Render's free instance, which may take a little time to start after a period of inactivity.
 
 ## ✨ Features
 
@@ -15,10 +19,28 @@ The application features a modern web interface, conversational memory, streamin
 - **Web Search:** Integrates Google Serper to retrieve relevant information from the web.
 - **Conversational Memory:** Maintains conversation context and stores chat history.
 - **Streaming Responses:** Displays AI-generated responses progressively.
-- **Chat History Management:** Create and revisit previous conversations.
+- **Chat History Management:** Create, revisit, and delete previous conversations.
 - **Interactive Web Interface:** Modern frontend built with HTML, CSS, and JavaScript.
 - **REST API:** FastAPI handles communication between the frontend and backend.
 - **Database Integration:** SQLite and SQLAlchemy manage conversations and messages.
+
+## 📸 Screenshots
+
+### 1. Welcome Screen
+
+![Ask Buddy Welcome Screen](screenshots/image_1.jpeg)
+
+### 2. Chat Interface
+
+![Ask Buddy Chat Interface](screenshots/image_2.jpeg)
+
+### 3. AI Conversation
+
+![Ask Buddy AI Conversation](screenshots/image_3.jpeg)
+
+### 4. Chat History
+
+![Ask Buddy Chat History](screenshots/image_4.jpeg)
 
 ## 🛠️ Tech Stack
 
@@ -32,7 +54,8 @@ The application features a modern web interface, conversational memory, streamin
 | Search Tool | Google Serper API |
 | Database | SQLite |
 | ORM | SQLAlchemy |
-| API Documentation | Swagger UI |
+| API Documentation | Swagger UI (FastAPI) |
+| Deployment | Render |
 | Version Control | Git, GitHub |
 
 ## 🏗️ Project Architecture
@@ -48,32 +71,44 @@ Ask Buddy follows a frontend-backend architecture:
 ## 📁 Project Structure
 
 ```text
-Ask-Buddy/
-│
-├── README.md
+ask-buddy-agentic-ai/
 │
 ├── backend/
+│   ├── services/
+│   │   ├── __init__.py
+│   │   └── gemini.py
+│   │
+│   ├── __init__.py
 │   ├── main.py
 │   ├── database.py
 │   ├── models.py
-│   └── services/
-│       └── gemini.py
+│   └── schemas.py
 │
 ├── frontend/
-│   ├── index.html
+│   ├── assets/
+│   │   └── logo.svg
+│   │
 │   ├── css/
 │   │   └── style.css
+│   │
 │   ├── js/
 │   │   └── script.js
-│   └── assets/
-│       └── logo.svg
+│   │
+│   └── index.html
+│
+├── screenshots/
+│   ├── image_1.jpeg
+│   ├── image_2.jpeg
+│   ├── image_3.jpeg
+│   └── image_4.jpeg
 │
 ├── data/
-│   └── askbuddy.db
+│   └── askbuddy.db (created automatically)
 │
 ├── .env
 ├── .gitignore
-└── requirements.txt
+├── requirements.txt
+└── README.md
 ```
 
 ## ⚙️ Getting Started
@@ -83,11 +118,11 @@ Follow these steps to run Ask Buddy locally.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR-USERNAME/Ask-Buddy.git
+git clone https://github.com/PalakMallik/ask-buddy-agentic-ai.git
 ```
 
 ```bash
-cd Ask-Buddy
+cd ask-buddy-agentic-ai
 ```
 
 ### 2. Create a Virtual Environment
@@ -158,8 +193,7 @@ Keep all API credentials secure using environment variables.
 
 ## 🚀 Future Enhancements
 
-- Deploy Ask Buddy for public access.
-- Introduce user authentication.
+- Introduce user authentication and personalized conversations.
 - Improve agent reasoning and tool selection.
 - Add more external tools and integrations.
 - Enhance conversation management and personalization.
@@ -169,7 +203,7 @@ Keep all API credentials secure using environment variables.
 **Palak Mallik**
 
 - GitHub: [PalakMallik](https://github.com/PalakMallik)
-- LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/palak-mallik/)
+- LinkedIn: [Palak Mallik](https://www.linkedin.com/in/palak-mallik/)
 
 ---
 
